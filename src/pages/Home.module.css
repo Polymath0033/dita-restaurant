@@ -1,0 +1,123 @@
+.top {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  height: 500px;
+}
+
+.top div {
+  display: grid;
+  place-content: center;
+}
+
+.text {
+  flex-direction: column;
+}
+
+.side {
+  background-color: var(--primary);
+}
+
+.text h1,
+.text h2 {
+  color: #9ba5ad;
+  font-size: 2.5rem;
+}
+
+.text h1 {
+  color: var(--primary-text);
+}
+
+.side img {
+  margin-left: -8rem;
+  height: 250px;
+  width: 250px;
+}
+
+.top button {
+  all: unset;
+  color: var(--primary-text);
+  background-color: var(--yellow);
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
+  width: 30%;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.container {
+  margin-top: 2rem;
+  padding: 2rem;
+  height: 400px;
+}
+
+.title {
+  font-weight: bold;
+  color: var(--primary-text);
+  position: relative;
+  z-index: 100;
+  background-color: white;
+  overflow: hidden;
+  text-transform: capitalize;
+  margin-bottom: 2.5rem;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title::after {
+  content: "";
+  width: 70%;
+  background-color: var(--yellow);
+  height: 3px;
+  z-index: 1;
+  top: 50%;
+  position: absolute;
+  margin-left: 2rem;
+}
+
+.image {
+  background-color: var(--primary);
+  border-radius: 10px;
+  height: 400px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  text-align: center;
+  float: left;
+}
+
+.image img {
+  margin: auto;
+}
+
+.aside {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2rem 4rem 2rem 3rem;
+  flex-direction: column;
+}
+
+.aside h1 {
+  color: rgba(28, 49, 68, 0.75);
+  font-size: 2.1rem;
+  margin: auto 0;
+}
+
+.bold {
+  font-weight: bold;
+  color: var(--primary-text);
+}
+
+.aside h2 {
+  color: rgba(28, 49, 68, 0.75);
+}
+
+.container img[alt="masa"] {
+  float: right;
+}
